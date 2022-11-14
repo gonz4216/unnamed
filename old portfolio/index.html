@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Gonsalves</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body id="body">
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <h1 class="personal-logo">ETHAN GONSALVES</h1>
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+
+        <h1 class="title-top">HI THERE <span class="wave">👋</span>, I'M</h1>
+        <h1 class="title">ethan.</h1>
+        <h2 class="subtitle">FRONT-END ENGINEER + DESIGNER 👨‍💻</h2>
+        <p class="header__para">
+          Im a design minded front-end engineer based in Toronto, Ontario
+          <br>
+        </p>
+        <button class="contact__btn" onclick="toggleModal()">HIRE ME</button>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/ethan-gonsalves-316a3a1ab/" target="_blank" class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/gonz4216" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="./assets/Resume 2022.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+
+        </div>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+        <p class="modal__para">
+          I'm a UX Designer & Software Developer living in Canada. I am highly motivated with a strong passion for
+          learning
+          and building apps and websites that provide a great user experience.
+          <br>
+          🚀 Build stable and secure product platforms
+          <br>
+          🏛 Design and develop robust and scalable product architecture
+          <br>
+          🛡️ Scaling your product, all while maintaining high security standards
+          <br>
+          🎨 Design accessible and user friendly web apps and tools
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+            <span class="language__name">TypeScript</span>
+          </figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/Python.svg.png" alt="">
+            <span class="language__name">Python</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://miro.medium.com/max/788/0*ur5GVkQTwEEoB5iY.png" alt="">
+            <span class="language__name">Firebase</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/adobe-xd.svg" alt="">
+            <span class="language__name">Adobe XD</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(init)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" type="submit" class="form__submit"> Send it my way</button>
+
+
+
+
+
+          <script type="text/javascript">
+            emailjs.init('LrIR6_ub3lnb16FdH')
+          </script>
+
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+    <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section>
+  <section id="other-pros-setc">
+    <div class="row-other">
+      <h1 class="section__title">
+        Here are some of my <span class="orange">projects</span>
+      </h1>
+      <div class="other-projects--container">
+
+
+        <div class="other__projects">
+          <figure class="imgwrapper">
+            <a href="./eatmore.html">
+              <img src="./assets/eatmore.jpg" alt="" class="other-pro-img">
+            </a>
+          </figure>
+          <div class="text-other--projects">
+            <h1 class="other-pros-h1">Eatmore</h1>
+            <span class="other-pros-span">UX Design, Case Study</span>
+            <p class="other-pros-para">An online food ordering and delivery platform</p>
+          </div>
+
+        </div>
+        <div class="other__projects">
+          <figure class="imgwrapper">
+            <a href="./catusclub.html">
+              <img src="./assets/catusclub.png" alt="" class="other-pro-img">
+            </a>
+          </figure>
+          <div class="text-other--projects">
+            <h1 class="other-pros-h1">Catus Club Cafe</h1>
+            <span class="other-pros-span">UX Design, Case Study</span>
+            <p class="other-pros-para">Cactus Club Cafe is a Canadian-owned chain of permium casual restaurants that orginated in North Vancover, BC</p>
+          </div>
+
+        </div>
+        <div class="other__projects">
+
+          <figure class="imgwrapper">
+            <a href="./fitness.html">
+
+              <img src="./assets/205.png" alt="" class="other-pro-img resize--img">
+            </a>
+          </figure>
+          <div class="text-other--projects">
+            <h1 class="other-pros-h1">Fitness</h1>
+            <span class="other-pros-span">UX Design, Case Study</span>
+            <p class="other-pros-para">Fitness is a gym with a goal to engage people to keep their body fit and lead a healthy life using it.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        
+        
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/chronicled.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Chronicled </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, React
+                </h4>
+                <p class="project__description--para">
+                  Automating transactions between trading partners in the Life Sciences Industry through the MediLedger
+                  Network
+                </p>
+                <div class="project__description--links">
+
+
+                  <a href="https://gonz4216.github.io/Chronicled/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://gonz4216.github.io/Chronicled/" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Google issue.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Google In-Store Issue Reporting System </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, React
+                </h4>
+                <p class="project__description--para">
+                  Report any issues with your retail stores
+                  Google products, retail displays & Chromebook’s
+                </p>
+                <div class="project__description--links">
+
+
+                  <a href="https://google-issue-reporting.vercel.app/" target="_blank"
+                    class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/gonz4216/Google-Issue-Reporting" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Nonid .png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Nonid </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Nonid is a SEO software agency A responsive, professional landing page template I built with best
+                  practice HTML, CSS and JavaScript.
+                  In the process of building the website.
+                </p>
+                <div class="project__description--links">
+
+
+                  <a href="https://gonz4216.github.io/Nonid/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/gonz4216/Nonid" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/google mockup.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Twins Film
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, React, Firebase
+                </h4>
+                <p class="project__description--para">
+                  Twins Film was designed using React(+hooks) and many other frameworks. It was built to many
+                  demonstrate the styling and front-end development of a website using many more pictures and animations
+                  then data layers. twins-film is a leading streaming service that offers some of the latest and
+                  greatest trailors and movies that the entertainment industry has to offer.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://twins-movies.web.app/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/gonz4216/Nonid" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Frontend Simplified.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Amazon Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, React
+                </h4>
+                <p class="project__description--para">
+                  This Amazon clone I created targeting my front-end best practices
+
+                  Using React and other advanced frameworks such as React Router, and Firebase
+                  API/Database.
+                  This responsive website is a direct representation of the official website with Date Searching
+                  Feel free to check out the Github repo for this project!.
+                </p>
+                <a href="https://github.com/gonz4216/Amazon-Clone" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Eportfolio YT.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Chef Food </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Chef Food is a local restaurant based in Toronto that opened in 2018, we made their first website.!
+                </p>
+                <div class="project__description--links">
+
+                  <a href="https://github.com/gonz4216/Chef-Food" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://gonz4216.github.io/Chef-Food/index.html" target="_blank"
+                    class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <h1 class="personal-logo">ETHAN GONSALVES</h1>
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/gonz4216" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ethan-gonsalves-316a3a1ab/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="./assets/Resume 2022.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2022 Ethan Gonsalves</div>
+      </div>
+    </div>
+  </footer>
+  <section>
+    <div class="row-other">
+      <div class="other-projects--container">
+
+
+        <div class="other__projects">
+          <figure class="imgwrapper">
+            <a href="./eatmore.html">
+              <img src="./assets/eatmore.jpg" alt="" class="other-pro-img">
+            </a>
+          </figure>
+          <div class="text-other--projects">
+            <h1 class="other-pros-h1">Project</h1>
+            <span class="other-pros-span">UX Design, Case Study</span>
+            <p class="other-pros-para">Supported students make a mentor-mentee relationship through personalized
+              search.</p>
+          </div>
+
+        </div>
+        <div class="other__projects">
+          <figure class="imgwrapper">
+            <a href="./catusclub.html">
+              <img src="./assets/catusclub.png" alt="" class="other-pro-img">
+            </a>
+          </figure>
+          <div class="text-other--projects">
+            <h1 class="other-pros-h1">Project</h1>
+            <span class="other-pros-span">UX Design, Case Study</span>
+            <p class="other-pros-para">Supported students make a mentor-mentee relationship through personalized
+              search.</p>
+          </div>
+
+        </div>
+        <div class="other__projects">
+
+          <figure class="imgwrapper">
+            <a href="./fitness.html">
+
+              <img src="./assets/205.png" alt="" class="other-pro-img resize--img">
+            </a>
+          </figure>
+          <div class="text-other--projects">
+            <h1 class="other-pros-h1">Project</h1>
+            <span class="other-pros-span">UX Design, Case Study</span>
+            <p class="other-pros-para">Supported students make a mentor-mentee relationship through personalized
+              search.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+
+
+</html>
